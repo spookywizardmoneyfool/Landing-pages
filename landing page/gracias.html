@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gracias</title>
+        <style>
+            * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+            }
+            body {
+                background: #1e40af;
+                color: white;
+                line-height: 1.6;
+                text-align: center;
+            }
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+            .appear {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: slideFadeIn 1.5s ease-out forwards;
+            }
+            @keyframes slideFadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="appear">
+        <h2>Gracias por tu mensaje</h2>
+        <p>Pronto me pondré en contacto contigo.</p>
+        </div>
+    </body>
+</html>

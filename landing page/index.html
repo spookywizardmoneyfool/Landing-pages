@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Moderna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f7f9fc;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e40af;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    section.features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #1e40af;
+      margin-bottom: 0.5rem;
+    }
+    section.contact h2 {
+      text-align: center;
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #1e40af;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #1c3aa9;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #e0e7ff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tu Negocio Moderno</h1>
+    <p>Soluciones web rápidas, modernas y efectivas</p>
+  </header>
+
+  <section class="features">
+    <div class="card">
+      <h3>Diseño Responsivo</h3>
+      <p>Compatible con computadoras, tablets y celulares.</p>
+    </div>
+    <div class="card">
+      <h3>Entrega Rápida</h3>
+      <p>Tu página lista en menos de 3 días laborales.</p>
+    </div>
+    <div class="card">
+      <h3>Estilo Personalizado</h3>
+      <p>Adaptamos colores, logo y textos a tu marca.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <form name="contact" method="POST" data-netlify="true" action="gracias.html">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="nombre" placeholder="Tu nombre" required/>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required/>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea> 
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Paolo Ramirez - Página web demo para clientes
+  </footer>
+</body>
+</html>
